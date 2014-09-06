@@ -48,7 +48,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    content: "\f185";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -63,7 +63,9 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background: url(../img/wallpaper-526326.jpg) fixed no-repeat 0 -100px;
+    background-size: 100% auto;
+    /* background-color: #18bc9c; */
 }
 
 hr.star-primary {
@@ -75,6 +77,126 @@ hr.star-primary:after {
     background-color: #fff;
 }
 
+hr.disk-light,
+hr.disk-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.disk-light:after,
+hr.disk-primary:after {
+    content: "\f0c7";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.disk-light {
+    border-color: #fff;
+}
+
+hr.disk-light:after {
+    color: #fff;
+    /* background-color: #18bc9c; */
+    background: #2c3e50 fixed url(../img/wallpaper-832442.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+hr.disk-primary {
+    border-color: #2c3e50;
+}
+
+hr.disk-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+hr.info-light,
+hr.info-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.info-light:after,
+hr.info-primary:after {
+    content: "\f05a";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.info-light {
+    border-color: #fff;
+}
+
+hr.info-light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+hr.info-primary {
+    border-color: #2c3e50;
+}
+
+hr.info-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+hr.pdf-light,
+hr.pdf-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.pdf-light:after,
+hr.pdf-primary:after {
+    content: "\f1c1";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.pdf-light {
+    border-color: #fff;
+}
+
+hr.pdf-light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+hr.pdf-primary {
+    border-color: #2c3e50;
+}
+
+hr.pdf-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -82,11 +204,12 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #2c3e50 fixed url(../img/wallpaper-526326.jpg) no-repeat 0 -100px;
+    background-size: 100% auto;
 }
 
 header .container {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -110,7 +233,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
+        padding-top: 120px;
         padding-bottom: 100px;
     }
 
@@ -123,51 +246,29 @@ header .intro-text .skills {
     }
 }
 
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-
-    .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-    }
-
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
-}
-
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-}
-
-.navbar a:focus {
-    outline: 0;
+    /* background: transparent; */
 }
 
 .navbar .navbar-nav {
     letter-spacing: 1px;
 }
 
-.navbar .navbar-nav li a:focus {
-    outline: 0;
+.navbar .fa-sun-o:before,
+.navbar .fa-floppy-o:before,
+.navbar .fa-file-pdf-o:before {
+	font-size: 2em;
 }
 
-.navbar-default,
-.navbar-inverse {
-    border: 0;
+.navbar .fa-info-circle:before {
+	font-size: 2.2em;
+}
+
+.navbar .fa-file-pdf-o:before {
+	font-size: 1.9em;
 }
 
 section {
@@ -181,7 +282,9 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #2c3e50 fixed url(../img/wallpaper-832442.jpg) no-repeat;
+    background-size: cover;
+
 }
 
 @media(max-width:767px) {
@@ -253,9 +356,9 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px #2c3d50;
     font-size: 20px;
-    color: #fff;
+    color: #2c3d50;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
@@ -264,9 +367,9 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
+    border: solid 2px #2c3d50;
+    color: #fff;
+    background: #2c3d50;
 }
 
 .floating-label-form-group {
