@@ -12,7 +12,8 @@ $(document).ready(function(){
 			render: function(data) {
 				//Debugging - Log the current scroll position.
 				//console.log(data.curTop);
-			}
+			},
+			forceHeight: false
 		});
 	};
 	$(window).on('resize', function () {
@@ -23,7 +24,8 @@ $(document).ready(function(){
 				render: function(data) {
 					//Debugging - Log the current scroll position.
 					//console.log(data.curTop);
-				}
+				},
+				forceHeight: false
 			});
 		}
 	});

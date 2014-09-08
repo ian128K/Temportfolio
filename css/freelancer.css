@@ -314,6 +314,11 @@ section.success {
 	section.first {
 		padding-top: 75px;
 	}
+
+	.sm-hide {
+		visibility: hidden;
+		margin-left: -11.99px;
+	}
 }
 
 #portfolio .portfolio-item {
@@ -453,6 +458,8 @@ footer .footer-below {
 
 section#resume .btn-outline {
 	margin-top: 15px;
+	position: relative;
+	left: -5px;
 	border: solid 2px #2c3d50;
 	font-size: 20px;
 	color: #2c3d50;

@@ -28,7 +28,6 @@
 	<meta name="format-detection" content="telephone=no" />
 	<!-- Default setting is "telephone=yes", which indicates that telephone numbers in the document should appear as hypertext links that can be tapped to make a phone call. Setting it to "telephone=no" prevents unintended strings of numbers in the body of this document from being interpreted as phone numbers. By explicitly marking up the one use of a phone number with the "tel:" URI scheme, we ensure that the number we do want to appear as a hypertext link will do so. -->
 
-
 	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 
@@ -36,13 +35,13 @@
 	<link href="css/freelancer.css" rel="stylesheet">
 
 	<!-- Custom Fonts -->
-	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 </head>
 
-<body id="skrollr-body" class="index">
+<body class="index">
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -73,11 +72,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img class="img-responsive" src="img/profile.png" alt="" data-0p="transform: translateY(0em);opacity: 1;" data-90p="transform: translateY(-10em);opacity: 0;">
-					<div class="intro-text" data-0p="opacity: 1;" data-50p="opacity: 0;">
+					<img class="img-responsive" src="img/profile.png" alt="" data-top-top="transform: translateY(0em);opacity: 1;" data-top-center="transform: translateY(-10em);opacity: 0;">
+					<div class="intro-text" data-0p="opacity: 1;" data-75p="opacity: 0;">
 						<span class="name">Ian Adams</span>
 						<hr class="star-light">
-						<span class="skills">Web Developer – Interaction Designer – Graphic Designer</span>
+						<span class="skills">Front-End Web Developer<span class="sm-hide"> –</span> Graphic and Interaction Designer</span>
 					</div>
 				</div>
 			</div>
@@ -86,7 +85,7 @@
 
 	<!-- About Section -->
 	<section id="about">
-		<div class="container" data-0p="opacity: 0;" data-100p="opacity: 1;" data-top="opacity: 0.3" data-top-center="opacity: 0">
+		<div class="container" data-bottom-top="opacity: 0;" data-bottom-center="opacity: 0;" data-center-center="opacity: 1;" data-center-top="opacity: 1;" data-top-bottom="opacity: 0.1;">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2>About</h2>
@@ -95,13 +94,11 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-2">
-					<p>Ian is an experienced <a href="http://blogs.msdn.com/b/seliot/archive/2010/04/18/what-is-an-sdet.aspx" title="Software Development Engineer in Test">SDET</a> with a zeal for <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">front-end web development</a> and well-thought-out user experiences. He loves taking on projects that expand the frontiers of his knowledge and skill, and he recently went back to school because he thought learning chemistry and physics would be fun.</p>
-					<p>(So far it has been.)</p>
+					<p>Ian Adams is an experienced <a href="http://blogs.msdn.com/b/seliot/archive/2010/04/18/what-is-an-sdet.aspx" title="Software Development Engineer in Test">SDET</a> with a zeal for <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">front-end web development</a> and well-thought-out user experiences. He loves taking on projects that expand the frontiers of his knowledge and skill, and he recently went back to school because he thought learning chemistry and physics would be fun.</p>
 				</div>
 				<div class="col-lg-4">
 					<p>He’s a staunch advocate of web apps being developed using automated build systems with the tests written first, and thinks <a href="https://angularjs.org">AngularJS</a> is the <a href="http://youtu.be/4_Pbx9mvWPY">way of the future</a>.</p>
-					<p>Take a look around. If you like what you see, go ahead and contact him — he’d love to hear from you. While you’re at it, give his résumé a download.</p>
-					<p>(All that stuff is at the <span class="page-scroll"><a href="#footer">end of the page</a></span>.)</p>
+					<p>Take a look around. If you like what you see, go ahead and <span class="page-scroll"><a href="#contact">contact him</a></span> — he’d love to hear from you. While you’re at it, <span class="page-scroll"><a href="#resume">give his résumé a download</a></span>.</p>
 				</div>
 			</div>
 		</div>
@@ -109,7 +106,7 @@
 
 	<!-- Portfolio Grid Section -->
 	<section class="success" id="portfolio">
-		<div class="container" data-bottom-top="opacity: 0.75;" data-top-top="opacity: 1;">
+		<div class="container" data-bottom-top="opacity: 0;" data-center-top="opacity: 1;" data-center-center="opacity: 1;" data-top-bottom="opacity: 0.2;">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2>Portfolio</h2>
@@ -183,7 +180,7 @@
 
 	<!-- Résumé Section -->
 	<section id="resume">
-		<div class="container" data-bottom-center="opacity: 0.25;" data-center-top="opacity: 1;">
+		<div class="container" data-bottom-top="opacity: 0.25;" data-center-top="opacity: 1;">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2>Résumé</h2>
@@ -201,7 +198,7 @@
 	</section>
 
 	<!-- Footer -->
-	<footer class="text-center" id="footer">
+	<footer class="text-center">
 		<div class="footer-above">
 			<div class="container">
 				<div class="row">
@@ -265,7 +262,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-below">
+		<div class="footer-below" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -507,10 +504,8 @@
 	<script async src="js/bootstrap.min.js"></script>
 
 	<!-- JavaScript & jQuery Plugins -->
-	<script async src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script async src="js/classie.js"></script>
-	<script async src="js/cbpAnimatedHeader.js"></script>
 	<script async src="js/skrollr.min.js"></script>
+	<script async src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 	<!-- Custom Theme JavaScript -->
 	<script async src="js/freelancer.js"></script>
