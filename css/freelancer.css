@@ -71,8 +71,7 @@ hr.star-light {
 
 hr.star-light:after {
 	color: #fff;
-	background: url(../img/wallpaper-526326.jpg) fixed no-repeat;
-	background-size: cover;
+	background: #18bc9c url(../img/header.png) fixed repeat;
 }
 
 hr.star-primary {
@@ -111,8 +110,7 @@ hr.disk-light {
 
 hr.disk-light:after {
 	color: #fff;
-	background: #2c3e50 fixed url(../img/wallpaper-832442.jpg) no-repeat;
-	background-size: cover;
+	background: #2c3e50 url(../img/portfolio.png) fixed repeat;
 }
 
 hr.disk-primary {
@@ -209,8 +207,7 @@ hr.pdf-primary:after {
 header {
 	text-align: center;
 	color: #fff;
-	background: #2c3e50 fixed url(../img/wallpaper-526326.jpg) no-repeat;
-	background-size: cover;
+	background: #18bc9c url(../img/header.png) fixed repeat;
 }
 
 header .container {
@@ -286,8 +283,7 @@ section h2 {
 
 section.success {
 	color: #fff;
-	background: #2c3e50 fixed url(../img/wallpaper-832442.jpg) no-repeat;
-	background-size: cover;
+	background: #2c3e50 url(../img/portfolio.png) fixed repeat;
 }
 
 @media(max-width:767px) {
@@ -295,20 +291,10 @@ section.success {
 		display: none;
 	}
 
-	header, hr.star-light:after {
-		background-position: -860px -100px;
-		background-size: auto;
-	}
-
 	header img {
 		width: 128px;
 		height: 128px;
-		margin-top: 19%;
-	}
-
-	section#portfolio, hr.disk-light:after {
-		background-position: -900px -230px;
-		background-size: auto 100%;
+		margin-top: -6%;
 	}
 
 	section {
@@ -318,10 +304,16 @@ section.success {
 	section.first {
 		padding-top: 75px;
 	}
+}
 
+@media(max-width:479px) {
 	.sm-hide {
 		visibility: hidden;
 		margin-left: -11.99px;
+	}
+
+	header img {
+		margin-top: 19%;
 	}
 }
 
