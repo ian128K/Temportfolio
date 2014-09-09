@@ -36,7 +36,11 @@ h6 {
 	font-weight: 700;
 }
 
-#footer .list-unstyled li {
+footer .list-unstyled {
+	margin-top: -3px;
+}
+
+footer .list-unstyled li {
 	font-size: 20px;
 }
 
