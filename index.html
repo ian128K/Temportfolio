@@ -35,7 +35,7 @@
 	<link href="css/freelancer.css" rel="stylesheet">
 
 	<!-- Custom Fonts -->
-	<link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -507,7 +507,7 @@
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2">
 						<div class="modal-body">
-							<h2><cite>Enemy Planet</cite> Achievements UI (iPhone)</h2>
+							<h2><cite>Enemy Planet</cite> Dialog UI (iPhone)</h2>
 							<hr class="game-primary">
 							<img src="img/portfolio/EP-Achievements.jpg" class="img-responsive img-centered" alt="">
 							<p>During level selection, players were given two buttons: one for level-specific settings, and another to access the achievements available for that level. Icons for each achievement would appear as only silhouettes until the achievement was earned. Tapping an achievement icon would display that achievement’s info in the main part of the dialog, while tapping the Game Center icon would open an in-game Game Center view so that users could see all the achievements for the game at once, as well as leaderboards.</p>
@@ -679,7 +679,7 @@
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2">
 						<div class="modal-body">
-							<h2>Star Fleet Battles SSD: Romulan K7R Battlecruiser</h2>
+							<h2>Star Fleet Battles SSD: Romulan K7R</h2>
 							<hr class="image-primary">
 							<img src="img/portfolio/Romulan-K7R.png" class="img-responsive img-centered" alt="">
 							<p>Another of the <abbr title="Ship Systems Display">SSD</abbr>s redesigned for my and my friend’s <a href="http://en.wikipedia.org/wiki/Star_Fleet_Battles">Star Fleet Battles</a> gaming session. This one is the Romulan K7R, based off of the ship from the <cite>Star Trek</cite> episode <a href="http://en.memory-alpha.org/wiki/The_Enterprise_Incident_(episode)#Remastered_information">The Enterprise Incident</a>. The original <abbr title="Ship Systems Display">SSD</abbr> is included below for comparison.</p>
@@ -697,18 +697,19 @@
 		</div>
 	</div>
 
-	<!-- jQuery Version 1.11.0 -->
-	<script async src="js/jquery-1.11.0.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script async src="js/bootstrap.min.js"></script>
-
-	<!-- JavaScript & jQuery Plugins -->
-	<script async src="js/skrollr.min.js"></script>
-	<script async src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-	<!-- Custom Theme JavaScript -->
-	<script async src="js/freelancer.js"></script>
+	<!-- JavaScript deferred until after the page loads. -->
+	<script type="text/javascript">
+		function downloadJSAtOnload() {
+		var element = document.createElement("script");
+		element.src = "js/index.min.js";
+		document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+		window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+		window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+	</script>
 
 </body>
 
